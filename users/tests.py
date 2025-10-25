@@ -56,7 +56,7 @@ class UserSerializerTests(APITestCase):
 
 class CreateUserTests(APITestCase):
     def setUp(self):
-        self.create_url = reverse("user:create")
+        self.create_url = reverse("users:create")
 
     def test_create_user_success(self):
         payload = {
